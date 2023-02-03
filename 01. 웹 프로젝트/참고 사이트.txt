@@ -5,6 +5,7 @@ https://ohora.kr/
 
 1-2. 메인 구성
 https://www.tamburins.com/
+https://sasuphi.com/
 
 1-3. 서브_제품 페이지 구성
 https://nonfiction.com/product/list.html?cate_no=42
@@ -22,10 +23,35 @@ https://vollebak.com/
 2-2. 서브_제품 페이지
 https://secrid.com/en-global/wallets/miniwallet/
 - 마우스 오버 시 제품 사진 변경 (네일 팁 -> 실제 착용)
+https://banditrunning.com/
+- 마우스 오버 시 제품 사진 변경되면서 add to cart 추가
+https://sasuphi.com/collections/new-in
+- 마우스 오버 시 제품 사진 변경되면서 add to cart 추가하고 오른쪽 상단 위에 찜버튼 추가(하트 모양)
 
 2-3. 하단
 https://secrid.com/en-global
 - 하단 SNS 구성
 
+3. 기타 효과
+https://kmbch.webflow.io/
+- 맥주병 돌아가는 효과 어디에 쓸 수 있을지
+https://consumer.haus/
+- 그냥 다시 봐보기
+https://amourliquide.com/en/
+- 로딩화면
+
 
 https://www.awwwards.com/websites/nominees/
+
+4. 모바일
+
+1. 구성 참고
+
+1-3. 서브 제품페이지 구성
+https://suitsupply.com/en-nl/lookbuilder
+
+2. 효과 참고
+
+3. 하단
+
+4. 기타
