@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* 오호라 초기화 css - reset.css */
+
+/* ul,ol 리셋 */
+ul,ol{
+    /* 블릿/숫자 제거 */
+    list-style: none;
+}
+
+/* a요소 리셋 */
+a{
+    /* 글자색 */
+    color: #000;
+    /* 밑줄 없앰 */
+    text-decoration: none;
+}

@@ -1,3 +1,9 @@
 @charset "utf-8";
 
 /* 오호라 공통 모듈 CSS - common.css */
+
+.tlmbx{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 15px;
+}
