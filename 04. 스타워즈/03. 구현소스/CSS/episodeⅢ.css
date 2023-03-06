@@ -5,7 +5,7 @@
 
 /* 임시 배경 */
 body{
-    background-color: #555;
+    background-color: #000;
 }
 
 .top{
@@ -39,7 +39,16 @@ body{
 
 /* 영화 메인 이미지 크기 */
 .mimg_bx{
-  background-image: ;
+  background-image: url(../image_dm/bg_main.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+
+.mimg_bx h2,h3,h4{
+  color: #fff;
+  text-align: center;
 }
 
 .mposter img{

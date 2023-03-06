@@ -9,9 +9,13 @@ html, body{
   overflow-x: hidden;
 }
 
-a{
+.mtit,h2,h3,h4,a{
     color: #fff;
     text-decoration: none;
+}
+
+.minfo{
+  color: #b5b7b7;
 }
 
 ul,ol{
