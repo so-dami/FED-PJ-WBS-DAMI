@@ -13,10 +13,12 @@ body{
 }
 
 /* 로고 */
-.tlogo{
-    width: 200px;
+.tlogo img{
+    width: 100px;
     height: auto;
     margin: 0 auto;
+    margin-left: 50%;
+    padding: 10px;
 }
 
 .tlogo>a {
@@ -32,4 +34,16 @@ body{
     transform: translateY(-50%);
     display: flex;
     gap: 0.7vw;
+    margin-right: 10px;
 }
+
+/* 영화 메인 이미지 크기 */
+.mimg_bx{
+  background-image: url();
+}
+
+.mposter img{
+  width: 25vw;
+  padding: 50px;
+}
+

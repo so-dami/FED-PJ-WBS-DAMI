@@ -3,18 +3,27 @@ html,body,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd{
     margin: 0;
     padding: 0;
 }
+
+/* 가로스크롤 생김 방지!(특히 모바일) */
+html, body{
+  overflow-x: hidden;
+}
+
 a{
     color: #fff;
     text-decoration: none;
 }
+
 ul,ol{
     list-style: none;
 }
+
 ol::after,ul::after{
     content: '';
     display: block;
     clear: both;
 }
+
 li{
     float: left;
 }

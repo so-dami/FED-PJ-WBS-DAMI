@@ -1,6 +1,11 @@
 @charset "utf-8";
 /* 오호라 초기화 css - reset.css */
 
+/* 가로스크롤 생김 방지!(특히 모바일) */
+html, body{
+  overflow-x: hidden;
+}
+
 /* ul,ol 리셋 */
 ul,ol{
     /* 블릿/숫자 제거 */
