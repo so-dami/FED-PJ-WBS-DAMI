@@ -47,13 +47,23 @@ body{
   position: relative;
 }
 
-/* 영화 메인 이미지 크기 */
+/* 영화 메인 이미지 */
 .bg{
-  background-image: url(../img_episodeⅢ/);
+  background-image: url(../img_episodeⅢ/bg_main.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 500px;
+}
+
+/* 메인 이미지 위 텍스트 */
+.bg img{
+top: 0;
+left: 0;
+padding: 0;
+margin: 0;
+width: 250px;
+padding-top: 20%;
 }
 
 .text_con{
@@ -64,7 +74,7 @@ body{
 }
 
 .text_con>h2{
-  font-size: 50px;
+  font-size: 20px;
 }
 
 .mposter img{
