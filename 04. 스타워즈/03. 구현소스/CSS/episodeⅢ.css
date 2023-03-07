@@ -14,10 +14,10 @@ body{
 
 /* 로고 */
 .tlogo img{
+    display: block;
     width: 100px;
     height: auto;
     margin: 0 auto;
-    margin-left: 50%;
     padding: 10px;
 }
 
@@ -27,6 +27,7 @@ body{
     height: 100%;
 }
 
+/* 상단 gnb 메뉴 */
 .top ul{
     position: absolute;
     top: 50%;
@@ -37,8 +38,17 @@ body{
     margin-right: 10px;
 }
 
+/* 상단 gnb 메뉴 글자색 변경 */
+.top ul li a{
+  color: #b5b7b7;
+}
+
+.main_bn{
+  position: relative;
+}
+
 /* 영화 메인 이미지 크기 */
-.mimg_bx{
+.bg{
   background-image: url(../image_dm/bg_main.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,9 +56,15 @@ body{
   height: 500px;
 }
 
-.mimg_bx h2,h3,h4{
+.text_con{
+  position: absolute;
+  bottom: 30px;
   color: #fff;
   text-align: center;
+}
+
+.text_con>h2{
+  font-size: 50px;
 }
 
 .mposter img{
