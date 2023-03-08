@@ -5,20 +5,22 @@
 
 /* 임시 배경 */
 body{
+    /* background: url(../img/sp.png); */
     background-color: #000;
 }
 
 .top{
     position: relative;
+    height: 100px;
 }
 
 /* 로고 */
 .tlogo img{
     display: block;
-    width: 100px;
+    width: 140px;
     height: auto;
     margin: 0 auto;
-    padding: 10px;
+    padding:20px;
 }
 
 .tlogo>a {
@@ -35,7 +37,7 @@ body{
     transform: translateY(-50%);
     display: flex;
     gap: 0.7vw;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 /* 상단 gnb 메뉴 글자색 변경 */
@@ -54,6 +56,7 @@ body{
   background-size: cover;
   width: 100%;
   height: 500px;
+  padding: 50px;
 }
 
 /* 메인 이미지 위 제목 이미지 */
@@ -70,6 +73,7 @@ body{
 /* 메인 이미지 위 텍스트 */
 .text_con{
   position: absolute;
+  left: 145px;
   bottom: 30px;
   color: #fff;
   text-align: center;
