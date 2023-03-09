@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* EpisodeⅢ : 미디어쿼리 CSS - media.css */
+
+/*********** 가로 1150px 이하 사이즈 시작 ***********/
+@media (max-width:1150px) {
+    
+    /* 메인 이미지 위 이미지, 텍스트 */
+    .m{
+        top: auto;
+        bottom: 0;
+        transform: translate(-50%,0);
+        left: 50%;
+    }
+
+    .mv_poster{
+        width: 30%;
+    }
+
+    .mv_poster img {
+        width: 100%;
+    }
+
+    .mv_intro {
+        width: 70%;
+    }
+/*********** 가로 1150px 이하 사이즈 종료 ***********/

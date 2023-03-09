@@ -5,3 +5,65 @@
 @import url(./reset.css);
 @import url(./common.css);
 
+/* 메인 이미지 */
+
+    /* .m 부모 */
+    .main_bn{
+        position: relative;
+    }
+
+    /* 메인 이미지 크기, 가운데 정렬 */
+    .main_img>img{
+        display: block;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* 메인 이미지 위 이미지, 텍스트 */
+    .m{
+        position: absolute;
+        top: 0;
+        left: 25%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .tit_img>img{
+        display: block;
+        width: 18vw;
+        height: auto;
+        margin: 0 auto;
+        padding: 0 0 20px 0;
+    }
+
+    .main_txt{
+        text-align: center;
+    }
+
+/* 영화 포스터 */
+
+    .mv{
+        display: flex;
+        width: 90%;
+        padding-top: 40px;
+        margin: 0 auto;
+    }
+
+    .mv_poster>img{
+        display: block;
+    }
+
+/* 영화 제목 및 줄거리 */
+
+    .mv_intro{
+        padding-left: 40px;
+    }
+
+    .mv .text {
+        padding-top: 30px;
+    }
+
+    .mv .text:first-child {
+        padding-top: 0;
+    }
