@@ -7,13 +7,8 @@
   <title>Star Wars: Revenge of the Sith (EpisodeⅢ)</title>
     <!-- 파비콘 -->
     <link rel="shortcut icon" href="https://lumiere-a.akamaihd.net/v1/images/badbatch-s2-skull-favicon-512x512_e84fcd91.png?region=0%2C0%2C512%2C512">
-
-    <style>
-        /* 임시 배경 */
-        body{
-            background-color: #000;
-        }
-    </style>
+    <!-- 메인CSS -->
+    <link rel="stylesheet" href="./CSS/main.css">
 </head>
 
 <body>
@@ -42,6 +37,7 @@
                 </nav>
         </header>
     </div>
+
     <!-- 2. 메인영역 -->
     <div id="cont">
         <main class="cont">
@@ -49,7 +45,9 @@
             <section class="section section1">
                 <div class="main_bn">
                     <!-- 2-1-1. 메인 이미지 -->
-                    <div class="main_img"></div>
+                    <div class="main_img">
+                        <img src="./img_episodeⅢ/bg_main.jpeg" alt="메인이미지">
+                    </div>
                     <!-- 2-1-2. 제목 이미지 -->
                     <div class="tit_img">
                         <img src="./img_episodeⅢ/bg_txt.png" alt="제목이미지">
@@ -61,6 +59,7 @@
                         </h2>
                     </div>
                 </div>
+
                 <!-- 2-2. sub 영화 소개 -->
                 <div class="mv">
                     <!-- 2-2-1. 영화 포스터 -->
@@ -87,12 +86,34 @@
                     </div>
                 </div>
             </section>
-            <!-- 2-3. sub 영화 동영상 -->
-            <section class="section section2">
-                
+
+            <!-- 2-3. sub 동영상 -->
+            <section class="section section2"></section>
+
+            <!-- 2-4. sub 갤러리 -->
+            <section class="section section3">
+                <!-- 2-4-1. 갤러리 타이틀 -->
+                <h1 class="g_tit">Story Gallery | Revenge Of The Sith</h1>
+                <!-- 2-4-2. 이미지 박스 -->
+                <div class="photo">
+                    <img id="photo" src="./img_episodeⅢ/photo1.jpeg" alt="갤러리이미지">
+                </div>
+                <!-- 2-4-3. 이미지 선택 버튼 박스 -->
+                <div class="photobx">
+                    <!-- 이미지 컨텐츠 -->
+                    <div class="photocont"></div>
+                    <!-- 이동 버튼 -->
+                    <a href="#" class="abtn ab1">
+                        <span class="ir">왼쪽버튼</span>
+                    </a>
+                    <a href="#" class="abtn ab2">
+                        <span class="ir">오른쪽버튼</span>
+                    </a>
+                </div>
             </section>
         </main>
     </div>
+    
     <!-- 3. 하단영역 -->
 </body>
 

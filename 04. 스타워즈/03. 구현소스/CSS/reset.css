@@ -1,33 +1,22 @@
-@charset "UTF-8";
-html,body,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd{
+@charset "utf-8";
+/* EpisodeⅢ : 리셋CSS - reset.css */
+
+html,body,h1,h2,h3,h4,ul,ol,li{
     margin: 0;
     padding: 0;
 }
 
-/* 가로스크롤 생김 방지!(특히 모바일) */
+/* 가로스크롤 생김 방지 */
 html, body{
   overflow-x: hidden;
 }
 
-.mtit,h2,h3,h4,a{
-    color: #fff;
-    text-decoration: none;
-}
-
-.minfo{
-  color: #b5b7b7;
-}
-
+/* ul, ol 블릿 제거 */
 ul,ol{
     list-style: none;
 }
 
-ol::after,ul::after{
-    content: '';
-    display: block;
-    clear: both;
-}
-
+/* li 가로로 위치 */
 li{
     float: left;
 }
