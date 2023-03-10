@@ -16,58 +16,61 @@ h1,h2,h3,h4{
     color: #fff;
 }
 
-/* li 글자 밑줄 없애기 */
-.top ul li a{
-    text-decoration: none;
-    color: #b5b7b7;
-}
+/* 1. 상단 영역 */
 
-/* 로고 가운데 정렬 */
-.top{
-    /* .m_gnb의 부모 */
-    position: relative;
-    
-    padding: 20px 0;
-}
+    /* gnb 메뉴 */
+    .m_gnb{
+        /* .top의 자식 */
+        position: absolute;
 
-/* .t_logo > a{
-    display: block;
-    width: 10vw;
-    height: auto;
-    margin: 0px auto;
-}
-
-.t_logo > a > img{
-    width: 100%;
-    height: 100%;
-} */
-
-/* 수희 */
-    .t_logo {
-        width: 10vw;
-        height: auto;
-        aspect-ratio: 2.3/1;
-        margin: 0 auto;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
-    .t_logo > a {
+    /* li 글자 밑줄 없애기 */
+    .top ul li a{
+        text-decoration: none;
+        color: #b5b7b7;
+    }
+
+    /* 로고 가운데 정렬 */
+    .top{
+        /* .m_gnb의 부모 */
+        position: relative;
+        
+        padding: 20px 0;
+    }
+
+    /* .t_logo > a{
         display: block;
-        width: 100%;
-        height: 100%;
+        width: 10vw;
+        height: auto;
+        margin: 0px auto;
     }
 
     .t_logo > a > img{
-        display: block;
         width: 100%;
         height: 100%;
-    }
-/* 수희 */
+    } */
 
-.m_gnb{
-    /* .top의 자식 */
-    position: absolute;
+    /* 수희 */
+        .t_logo {
+            width: 10vw;
+            height: auto;
+            aspect-ratio: 2.3/1;
+            margin: 0 auto;
+        }
 
-    right: 30px;
-    top: 50%;
-    transform: translateY(-50%);
-}
+        .t_logo > a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .t_logo > a > img{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    /* 수희 */
