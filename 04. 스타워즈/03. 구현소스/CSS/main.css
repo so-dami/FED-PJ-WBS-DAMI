@@ -124,8 +124,10 @@
 }
 
 .mlist {
+    /* display: flex; */
     position: absolute;
     bottom: 100px;
+    margin: 0 auto;
     left: 50%;
     transform: translate(-50%,0%);
     overflow: hidden;
@@ -137,39 +139,9 @@
 }
 
 .mlist img {
-    width: 99px;
-    height: 140px;
+    width: 202px;
+    height: 113px;
 }
-
-.movtxt {
-    position: absolute;
-    top: 100%;
-    width: 99px;
-    height: 140px;
-    font-family: 'Noto Sans KR';
-    font-size: 14px;
-    list-style: 25px;
-    color: #fff;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.5);
-    transition: top .4s ease-out;
-}
-
-.mlist>ul>li:hover .movtxt {
-    top: 0;
-}
-
-.movtxt li {
-    float: none;
-}
-
-.movtxt li:first-child {
-    margin-top: 30px;
-    color: aqua;
-    font-size: 17px;
-    letter-spacing: -1px;
-}
-
 
 /* 2-3. sub 갤러리 */
 
