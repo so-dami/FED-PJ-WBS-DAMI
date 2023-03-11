@@ -1,5 +1,15 @@
 // 네비유형 6 : 배너셋팅 JS - ban.js //////
-window.addEventListener("DOMContentLoaded",setBan);
+window.addEventListener("DOMContentLoaded",()=>{
+
+    // 1. 최상위 배너박스 대상 선정: .banbx
+    const photobx = document.querySelectorAll(".photobx");
+
+    // 2. 배너박스 일괄 셋팅하기
+    photobx.forEach((ele,idx)=>setBan(ele,idx)); // forEach //
+    // setBan(각요소,요소별순번)    
+    
+}); // 로드 구역
+
 
 /***************************************************** 
     [ 슬라이드 이동 기능정의 ]
@@ -42,34 +52,57 @@ window.addEventListener("DOMContentLoaded",setBan);
 
 *****************************************************/
 
+/*****************************************************
+    [ 배너함수 다중배너 셋팅함수로 모듈화하기 ]
+    -> 전달값을 사용하여 개별적인 배너요소 하위의 기능으로 작동하도록 최상위 배열 요소를 함수로 전달하여 내부 기능셋팅 시 document로 선택했던 요소를 모두 개별 최상위 배너요소 하위요소 선택으로 변경하면 기존 변수셋팅을 그대로 사용하여 개별 배너 모듈화를 손쉽게 할 수 있다.
+
+    [ 모듈화 원칙 ]
+    1. 상대적인 선택자 사용
+    2. for문에 의한 개별요소 별 일괄셋팅
+    3. 구체적인 차이점은 전달변수를 통하여 해결
+    4. 
+    
+*****************************************************/
 
 // 배너셋팅함수 //////////////
-function setBan(){
+function setBan(obj,seq){ // obj - 최상위요소 객체, seq - 순번
     // 1. 호출확인
     // console.log("배너야~!");
 
-    // 2. 대상선정 : .photocont
-    const photocont = document.querySelector(".photocont");
-    // console.log(photocont);
+    // 2. 대상선정 : .bancont
+    const photocont = obj.querySelector(".photocont");
+    // console.log(bancont);
 
     // 3. 태그 구성하기
     // 태그변수
-    let hcode = `<ul class="slide">`; 
+    let hcode = `<ul class="slide">`;
 
-    for(let i = 1 ; i<= 15; i++){
-        hcode +=   `
-            <li>
-                <img src="./img_episodeⅢ/photo${i}.jpeg" alt="배너이미지">
-            </li>
-        `;
+    // 배너 종류별 배너 셋팅 구분하기
+    if(seq===0){
+        for(let i = 1 ; i<= 15; i++){
+            hcode +=   `
+                <li>
+                    <img src="./img_episodeⅢ/photo${i}.jpeg" alt="배너이미지">
+                </li>
+            `;
+        } // for문 //
+    } // if - 1번 배너 //
 
-    } /////// for 문 ////////////
+    // else if(seq===1){
+    //     for(let i = 1 ; i<= 5; i++){
+    //         hcode +=   `
+    //             <li>
+    //                 <img src="./nav06/img/sban${i}.jpg" alt="배너이미지">
+    //             </li>
+    //         `;
+    //     } // for문 //
+    // } // else if - 2번 배너 //
 
     hcode += `</ul>`; 
 
     // console.log(hcode);
 
-    // 4. .photocont에 출력하기
+    // 4. .bancont에 출력하기
     photocont.innerHTML = hcode;
 
     //______________________________________________
@@ -78,17 +111,17 @@ function setBan(){
 
     // 1. 대상선정 //////////////////////////
     // 1-1. 이벤트 대상: .abtn
-    const abtn = document.querySelectorAll(".abtn");
+    const abtn = obj.querySelectorAll(".abtn");
 
     // 1-2. 변경 대상: .slide
-    const slide = document.querySelector(".slide");
+    const slide = obj.querySelector(".slide");
 
     // 1-3. 블릿 대상: .indic li
-    // const indic = document.querySelectorAll(".indic li");
+    // const indic = obj.querySelectorAll(".indic li");
     // console.log(indic);
 
     // 1-4. 슬라이드 li리스트
-    let slist = document.querySelectorAll(".slide>li");
+    let slist = obj.querySelectorAll(".slide>li");
 
     // [ 초기화1 - 순번붙이기 ] ///////////////////
     // 잘라내기로 li순번이 뒤섞이므로 블릿변경 매칭을 위한
@@ -102,7 +135,7 @@ function setBan(){
     // 맨뒤 맨앞이동 함수만들기
     const chgSeq = () => {
         // 현재 슬라이드 li 새로읽기(2번반복시 li의 순서가 달라지기때문)
-        slist = document.querySelectorAll(".slide>li");
+        slist = obj.querySelectorAll(".slide>li");
         // 맨뒤 맨앞이동하기 -> 변경대상: .slide -> slide변수
         slide.insertBefore(slist[slist.length - 1], slist[0]);
         // slide.insertBefore(넣을놈,넣을놈전놈)

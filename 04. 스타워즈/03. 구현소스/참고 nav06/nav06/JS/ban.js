@@ -79,7 +79,7 @@ function setBan(obj,seq){ // obj - 최상위요소 객체, seq - 순번
 
     // 배너 종류별 배너 셋팅 구분하기
     if(seq===0){
-        for(let i = 1 ; i<= 16; i++){
+        for(let i = 1 ; i<= 15; i++){
             hcode +=   `
                 <li>
                     <img src="./nav06/img/ban${i}.png" alt="배너이미지">

@@ -3,7 +3,7 @@
 
 /* 공사중 */
 body *{
-    outline: 1px dashed yellowgreen;
+    /* outline: 1px dashed yellowgreen; */
 }
 
 /* 임시 배경 */
@@ -28,10 +28,16 @@ h1,h2,h3,h4{
         transform: translateY(-50%);
     }
 
+    /* gbn 메뉴 사이 간격 조절 */
+    .top ul>li+li{
+        margin-left: 15px;
+    }
+
     /* li 글자 밑줄 없애기 */
     .top ul li a{
         text-decoration: none;
         color: #b5b7b7;
+        font-size: 17px;
     }
 
     /* 로고 가운데 정렬 */
