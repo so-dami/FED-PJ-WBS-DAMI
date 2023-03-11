@@ -124,17 +124,20 @@
 }
 
 .mlist {
-    /* display: flex; */
+    position: relative;
+}
+
+.mlist ul{
+    display: flex;
     position: absolute;
-    bottom: 100px;
-    margin: 0 auto;
+    margin-top: 50px;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,0%);
-    overflow: hidden;
+    transform: translate(-50%);
 }
 
 .mlist ul>li {
-    padding: 0 10px;
+    padding: 10px 10px;
     cursor: pointer;
 }
 
