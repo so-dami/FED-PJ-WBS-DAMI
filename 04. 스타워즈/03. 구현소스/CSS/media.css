@@ -2,23 +2,26 @@
 /* EpisodeⅢ : 미디어쿼리 CSS - media.css */
 
 /*********** 가로 1540px 이하 사이즈 시작 ***********/
-@media (max-width:1540px) {
-    
+@media (max-width: 1540px) {
+    .page {
+        height: auto;
+    }
+
     /* 메인 이미지 위 이미지, 텍스트 */
-    .m{
+    .m {
         top: auto;
         bottom: 0;
-        transform: translate(-50%,0);
+        transform: translate(-50%, 0);
         left: 50%;
     }
 
-    .cont{
+    .cont {
         /* 비율설정 */
         aspect-ratio: 1/1.3;
         background: 130%;
     }
 
-    .main_txt{
+    .main_txt {
         font-size: 12px;
         padding-bottom: 17px;
         font-weight: normal;
@@ -29,7 +32,7 @@
         font-weight: normal;
     }
 
-    .mv_poster{
+    .mv_poster {
         width: 30%;
     }
 
@@ -37,15 +40,15 @@
         width: 100%;
     }
 
-     /* 선택메뉴 ul */
-     .vlist ul{
+    /* 선택메뉴 ul */
+    .vlist ul {
         flex-wrap: wrap;
         /* 사이 간격: 위아래, 양쪽 */
         gap: 1vh, 2.2%;
     }
 
     /* 선택메뉴 상위 li */
-    .vlist ul>li{
+    .vlist ul > li {
         /* 사이간격 마진이 빠진 비율 */
         /* -> flex-basis는 width와 같지만 flex 통합 설정에서는 flex-basis로 재정의 */
         flex-basis: 31.83%;
@@ -55,23 +58,55 @@
 /*********** 가로 1540px 이하 사이즈 종료 ***********/
 
 /*********** 가로 910px 이하 사이즈 시작 ***********/
-@media (max-width:910px) {
-    
+@media (max-width: 910px) {
+    .ham {
+        display: block;
+    }
+    .m_gnb {
+        z-index: 100;
+    }
+    .m_gnb:hover .ham + .mlist {
+        height: 130px;
+    }
+
+    .m_gnb .mlist {
+        position: absolute;
+        top: 20px;
+        right: 0;
+        /* display: none; */
+        overflow: hidden;
+        height: 0px;
+        transition: 0.3s;
+        /* outline: 1px solid red; */
+    }
+    .m_gnb .mlist ul {
+        padding: 10px 15px;
+        background-color: rgba(255, 255, 255, 0.415);
+        border-radius: 15px;
+    }
+    .m_gnb.on ul li {
+        float: none;
+        line-height: 2;
+    }
+    .top ul > li + li {
+        margin: 0;
+    }
+
     /* 메인 이미지 위 이미지, 텍스트 */
-    .m{
+    .m {
         top: auto;
         bottom: 0;
-        transform: translate(-50%,0);
+        transform: translate(-50%, 0);
         left: 50%;
     }
 
-    .cont{
+    .cont {
         /* 비율설정 */
         aspect-ratio: 1/1.3;
         background: 130%;
     }
 
-    .main_txt{
+    .main_txt {
         font-size: 12px;
         padding-bottom: 17px;
         font-weight: normal;
@@ -82,7 +117,7 @@
         font-weight: normal;
     }
 
-    .mv_poster{
+    .mv_poster {
         width: 40%;
     }
 
@@ -90,15 +125,15 @@
         width: 100%;
     }
 
-     /* 선택메뉴 ul */
-     .vlist ul{
+    /* 선택메뉴 ul */
+    .vlist ul {
         flex-wrap: wrap;
         /* 사이 간격: 위아래, 양쪽 */
         gap: 1vh, 2.2%;
     }
 
     /* 선택메뉴 상위 li */
-    .vlist ul>li{
+    .vlist ul > li {
         /* 사이간격 마진이 빠진 비율 */
         /* -> flex-basis는 width와 같지만 flex 통합 설정에서는 flex-basis로 재정의 */
         flex-basis: 31.83%;

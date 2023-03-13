@@ -84,6 +84,10 @@ font-family: 'Tilt Warp', cursive;
     display: block;
 }
 
+.mv_poster {
+    width: 40%;
+}
+
 /* 영화 제목 및 줄거리 */
 
 .text {
@@ -92,7 +96,7 @@ font-family: 'Tilt Warp', cursive;
 
 .mv_intro {
     padding: 0 0 0 53px;
-    width: 840px;
+    width: 60%;
 }
 
 /* 영화 제목 */
@@ -102,7 +106,7 @@ font-family: 'Tilt Warp', cursive;
     font-family: "Tilt Warp", cursive;
     font-weight: normal;
     letter-spacing: 1px;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 
 /* 영화 장르 */
@@ -208,9 +212,10 @@ font-family: 'Tilt Warp', cursive;
     /* border: 1px solid #b5b7b7; */
 }
 
-.vlist ul > li:hover,
-.vlist ul > li.on {
+.vlist ul > li:hover img,
+.vlist ul > li.on img {
     outline: 3px solid yellow;
+    box-shadow: 0 0 20px yellow;
 }
 
 .vlist img {

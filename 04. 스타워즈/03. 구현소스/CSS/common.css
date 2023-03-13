@@ -16,6 +16,18 @@ h1,h2,h3,h4{
     color: #fff;
 }
 
+.ham{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 40px;
+    transform: scaleX(1.4) translateY(-50%);
+    display: none;
+}
+
 /* 1. 상단 영역 */
 
     /* gnb 메뉴 */

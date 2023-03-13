@@ -3,11 +3,6 @@
 function video(Id) {
     document.getElementById("mv").src = "https://secure.disney.com/embed/" + Id + "?domain=www.starwars.com";
 }
-
-// 요소 선택함수 ///////////////
-const qs = (x) => document.querySelector(x);
-const qsa = (x) => document.querySelectorAll(x);
-
 ////////// 로드 구역 //////////
 
 window.addEventListener("DOMContentLoaded", () => {
