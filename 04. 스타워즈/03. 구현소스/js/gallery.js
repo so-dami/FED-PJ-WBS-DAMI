@@ -88,15 +88,15 @@ function setBan(obj,seq){ // obj - 최상위요소 객체, seq - 순번
         } // for문 //
     } // if - 1번 배너 //
 
-    // else if(seq===1){
-    //     for(let i = 1 ; i<= 5; i++){
-    //         hcode +=   `
-    //             <li>
-    //                 <img src="./nav06/img/sban${i}.jpg" alt="배너이미지">
-    //             </li>
-    //         `;
-    //     } // for문 //
-    // } // else if - 2번 배너 //
+    else if(seq===1){
+        for(let i = 1 ; i<= 11; i++){
+            hcode +=   `
+                <li>
+                    <img src="./img_episodeⅢ/photo2_${i}.jpeg" alt="배너이미지">
+                </li>
+            `;
+        } // for문 //
+    } // else if - 2번 배너 //
 
     hcode += `</ul>`; 
 
