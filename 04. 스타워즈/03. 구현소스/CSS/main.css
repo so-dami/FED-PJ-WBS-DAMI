@@ -122,6 +122,28 @@ font-family: 'Tilt Warp', cursive;
     letter-spacing: 1px;
 }
 
+/* .tit::before{
+    content: '';
+    position: absolute;
+    background-color: #48494a;
+    height: 2px;
+    width: 4px;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 2px;
+}
+
+.tit::after{
+    content: '';
+    position: absolute;
+    background-color: #48494a;
+    height: 2px;
+    width: 4px;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 2px;
+} */
+
 /* 2-2. sub 동영상 */
 #screen {
     position: relative;
