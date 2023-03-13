@@ -1,4 +1,5 @@
-// 네비유형 6 : 배너셋팅 JS - ban.js //////
+// 스타워즈 갤러리 페이지 JS - gallery.js\
+
 window.addEventListener("DOMContentLoaded",()=>{
 
     // 1. 최상위 배너박스 대상 선정: .banbx

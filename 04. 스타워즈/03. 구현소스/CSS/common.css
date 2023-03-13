@@ -34,10 +34,19 @@ h1,h2,h3,h4{
     }
 
     /* li 글자 밑줄 없애기 */
-    .top ul li a{
+
+    .m_gnb ul>li a {
         text-decoration: none;
-        color: #b5b7b7;
         font-size: 17px;
+        color: #b5b7b7;
+        transition: all .3s ease-in-out;
+    }
+
+    /* gnb 메뉴 마우스 오버  */
+    .m_gnb ul>li:hover a,
+    .m_gnb ul>li.on a {
+        color: #fff;
+        text-decoration-line: underline;
     }
 
     /* 로고 가운데 정렬 */
