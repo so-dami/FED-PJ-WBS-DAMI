@@ -99,6 +99,7 @@
 .tit{
     text-align: center;
     font-size: 30px;
+    margin: 50px;
 }
 
 /* 2-2. sub 동영상 */
@@ -114,6 +115,7 @@
     width: 701px;
     height: 398px;
     background-color: #000;
+    border: 1px solid #b5b7b7;
 }
 
 #screen iframe {
@@ -139,7 +141,11 @@
     padding: 10px 10px;
     margin: 5px;
     cursor: pointer;
-    border: 1px solid #b5b7b7;
+    /* border: 1px solid #b5b7b7; */
+}
+
+.mlist ul>li:hover {
+    border: 3px solid yellow;
 }
 
 .mlist img {
