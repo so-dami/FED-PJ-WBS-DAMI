@@ -27,6 +27,20 @@ font-family: 'Tilt Warp', cursive;
     position: relative;
 }
 
+.main_bn {
+    position: relative;
+}
+
+.main_bn .bg_con {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 25%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 100%);
+}
+
 /* 메인 이미지 크기, 가운데 정렬 */
 .main_img > img {
     display: block;
@@ -64,6 +78,7 @@ font-family: 'Tilt Warp', cursive;
     padding: 40px 0;
     margin: 0 auto;
 }
+
 
 .mv_poster > img {
     display: block;
