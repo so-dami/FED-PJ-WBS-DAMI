@@ -5,6 +5,14 @@
 @import url(./reset.css);
 @import url(./common.css);
 
+/* 웹폰트 */
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Tilt+Warp&display=swap');
+
+/* 폰트
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Tilt Warp', cursive;
+*/
+
 /* 2-1. sub 메인 */
 
     /* 메인 이미지 */
@@ -58,6 +66,10 @@
 
     /* 영화 제목 및 줄거리 */
 
+    .text{
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
     .mv_intro{
         padding: 0 0 0 53px;
         width: 840px;
@@ -67,6 +79,10 @@
         .mv_tit{
             font-size: 40px;
             margin: 0 0 12px;
+            font-family: 'Tilt Warp', cursive;
+            font-weight: normal;
+            letter-spacing: 1px;
+            white-space: nowrap;
         }
 
         /* 영화 장르 */
@@ -74,6 +90,7 @@
             color: #b5b7b7;
             font-size: 14px;
             padding: 0 0 30px 4px;
+            font-weight: bold;
         }
 
         /* 영화 줄거리 */
@@ -100,13 +117,12 @@
     text-align: center;
     font-size: 30px;
     margin: 50px;
+    font-family: 'Tilt Warp', cursive;
+    font-weight: normal;
+    letter-spacing: 1px;
 }
 
 /* 2-2. sub 동영상 */
-#cont {
-    position: relative;
-}
-
 #screen {
     position: relative;
     top: 50%;
@@ -124,31 +140,40 @@
     border: 0;
 }
 
-.mlist {
+#cont {
     position: relative;
 }
 
-.mlist ul{
+.vlist {
+    position: relative;
+}
+
+.vlist ul{
     display: flex;
     position: absolute;
     margin-top: 50px;
+
+    /* 진행방향정렬 : 양쪽끝 맞춘후 사이간격일정 */
+    justify-content: space-between;
+    
     top: 50%;
     left: 50%;
     transform: translate(-50%);
 }
 
-.mlist ul>li {
+.vlist ul>li {
     padding: 10px 10px;
     margin: 5px;
     cursor: pointer;
     /* border: 1px solid #b5b7b7; */
 }
 
-.mlist ul>li:hover {
+.vlist ul>li:hover,
+.vlist ul>li.on {
     border: 3px solid yellow;
 }
 
-.mlist img {
+.vlist img {
     width: 202px;
     height: 113px;
 }
