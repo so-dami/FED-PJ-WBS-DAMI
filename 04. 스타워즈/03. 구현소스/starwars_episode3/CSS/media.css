@@ -230,6 +230,7 @@
 
 /*********** 가로 692px 이하 사이즈 시작 ***********/
 @media (max-width: 692px) {
+
     /* 햄버거 버튼 */
     .ham {
         font-size: 30px;
@@ -265,6 +266,23 @@
     }
 
     /* sub 동영상 */
+    @import url(../js/video.media.js);
+    
+        /* 동영상 클릭 시 배경 암전 효과 */
+        body::before {
+            content: "";
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        body.on::before {
+            display: block;
+        }
 
     #screen {
         display: none;
