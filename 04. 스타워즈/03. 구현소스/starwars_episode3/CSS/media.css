@@ -140,35 +140,52 @@
         text-align: center;
     }
 
+    /* 슬라이드 이동버튼 */
+    .abtn {
+        width: 15px;
+        height: 42px;
+    }
+
+    /* 왼쪽버튼 */
+    .ab1 {
+        left: 16%;
+        background-position: -25px -124px;
+    }
+
+    /* 오른쪽버튼 */
+    .ab2 {
+        right: 16%;
+        background-position: -175px -53px;
+    }
+
     /* 하단 영역 */
 
     #info address {
         font-style: normal;
         color: #fff;
-        font-family: 'Noto Sans KR';
+        font-family: "Noto Sans KR";
         font-size: 15px;
         line-height: 20px;
         padding-top: 20px;
         padding-left: 20px;
     }
 
-    .int{
+    .int {
         display: block;
         /* margin-left: 15%; */
         text-align: center;
         font-size: 8px;
         color: #b5b7b7;
-        display: none;
+        /* display: none; */
     }
 
     #info address img {
         position: absolute;
-        transform: scale(.5);
+        transform: scale(0.5);
         float: left;
         margin-right: 2px;
         margin-top: -32px;
     }
-    
 
     .sns {
         position: absolute;
@@ -210,3 +227,83 @@
     }
 }
 /*********** 가로 950px 이하 사이즈 종료 ***********/
+
+/*********** 가로 692px 이하 사이즈 시작 ***********/
+@media (max-width: 692px) {
+    /* 햄버거 버튼 */
+    .ham {
+        font-size: 30px;
+    }
+
+    /* 메인 이미지 위 이미지, 텍스트 */
+    .m {
+        position: absolute;
+        left: 30%;
+        bottom: 0%;
+        /* transform: translate(-50%, -50%); */
+    }
+
+    .main_txt {
+        /* display: none; */
+        font-size: 0.5rem;
+    }
+
+    /* 텍스트 이미지 */
+    .txt_img {
+        width: 50px;
+        height: auto;
+    }
+
+    .txt_img > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* 공통 제목 크기 변경 */
+    .tit {
+        font-size: 22px;
+    }
+
+    /* sub 동영상 */
+
+    #screen {
+        display: none;
+    }
+
+    .vlist ul {
+        display: flex;
+        position: relative;
+        margin-top: 50px;
+        justify-content: center;
+        top: 50%;
+        left: 50%;
+        gap: 0 29px;
+        transform: translate(-50%);
+    }
+
+    .vlist ul > li {
+        padding: 10px 10px;
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    .vlist ul > li:hover img,
+    .vlist ul > li.on img {
+        outline: 3px solid #fcb735;
+        box-shadow: 0 0 20px #fcb735;
+    }
+
+    /* 슬라이드 이동버튼 */
+    .abtn {
+        width: 10px;
+        height: 37px;
+    }
+
+    /* 오른쪽버튼 */
+    .ab2 {
+        right: 16%;
+        background-position: -180px -53px;
+    }
+
+}
+/*********** 가로 692px 이하 사이즈 종료 ***********/
