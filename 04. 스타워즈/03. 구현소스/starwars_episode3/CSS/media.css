@@ -266,8 +266,6 @@
     }
 
     /* sub 동영상 */
-    @import url(../js/video.media.js);
-    
         /* 동영상 클릭 시 배경 암전 효과 */
         body::before {
             content: "";
