@@ -82,6 +82,7 @@ font-family: 'Tilt Warp', cursive;
 
 .mv_poster > img {
     display: block;
+    width: 100%;
 }
 
 .mv_poster {
@@ -214,8 +215,8 @@ font-family: 'Tilt Warp', cursive;
 
 .vlist ul > li:hover img,
 .vlist ul > li.on img {
-    outline: 3px solid yellow;
-    box-shadow: 0 0 20px yellow;
+    outline: 3px solid #fcb735;
+    box-shadow: 0 0 20px #fcb735;
 }
 
 .vlist img {
