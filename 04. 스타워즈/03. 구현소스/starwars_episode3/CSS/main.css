@@ -243,9 +243,8 @@ font-family: 'Tilt Warp', cursive;
     position: relative;
 
     /* top: 10%; */
-    /* transform: translateY(-50%); */
-    /* 세로중앙! 안 씀 */
-    left: 25vw;
+    transform: translateX(-50%);
+    left: 50%;
     width: 50vw;
     aspect-ratio: 1/0.55;
     /* border: 2px solid red; */
@@ -321,13 +320,13 @@ font-family: 'Tilt Warp', cursive;
 
 /* 왼쪽버튼 */
 .ab1 {
-    left: 16.5vw;
+    left: 16%;
     background-position: -26px -124px;
 }
 
 /* 오른쪽버튼 */
 .ab2 {
-    right: 16.5vw;
+    right: 16%;
     background-position: -166px -53px;
 }
 
